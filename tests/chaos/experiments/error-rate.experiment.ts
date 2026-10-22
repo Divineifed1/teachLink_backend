@@ -14,7 +14,7 @@ export default function () {
   const res: any = chaosRequest('http://localhost:3000/auth/login');
 
   check(res, {
-    'handles failures gracefully': (r) =>
+    'handles failures properly': (r) =>
       r.status === 200 || r.status === 400 || r.status === 401 || r.status === 0,
   });
 
