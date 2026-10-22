@@ -55,7 +55,7 @@ export class ABTestingController {
    * Get available experiment templates
    */
   @Get('templates')
-  @ApiOperation({ summary: 'List available experiment templates' })
+  @ApiOperation({ summary: 'List all available experiment templates' })
   @ApiResponse({
     status: 200,
     description: 'Available experiment templates',
